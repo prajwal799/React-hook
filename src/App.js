@@ -11,7 +11,8 @@ function App() {
       {/* <Timer />
       <Counter />
       <Github /> */}
-      <StopTimer />
+      {/* <StopTimer /> */}
+      <Github />
     </div>
   );
 }

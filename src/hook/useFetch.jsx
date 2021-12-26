@@ -13,6 +13,7 @@ function useFetch(url) {
         setLoading(false);
       })
       .catch((err) => {
+        console.log(url,"url")
         setError(true);
         setLoading(false);
       });
