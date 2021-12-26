@@ -3,13 +3,15 @@ import './App.css';
 import Timer from './component/Timer';
 import { Counter } from './component/Counter';
 import Github from './component/Github';
+import { StopTimer } from './component/StopTimer';
 
 function App() {
   return (
     <div className="App">
-      <Timer />
+      {/* <Timer />
       <Counter />
-      <Github />
+      <Github /> */}
+      <StopTimer />
     </div>
   );
 }
