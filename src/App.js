@@ -3,16 +3,23 @@ import './App.css';
 import Timer from './component/Timer';
 import { Counter } from './component/Counter';
 import Github from './component/Github';
-import { StopTimer } from './component/StopTimer';
+import { Timers } from './component/Timers';
+import StopWatch from './component/StopWatch';
+import {useState} from "react";
+import { Button } from '@mui/material';
 
 function App() {
+  const [toggle ,setToggle] = useState(true);
   return (
     <div className="App">
       {/* <Timer />
       <Counter />
       <Github /> */}
-      {/* <StopTimer /> */}
-      <Github />
+      {/* <Github /> */}
+      <Button onClick={() => setToggle(true)}>Stop</Button>
+      <Button onClick={() => setToggle(false)} >Timer</Button>
+     {toggle ? <Timers /> : <StopWatch />}
+      
     </div>
   );
 }
